@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netherlands Air Quality</title>
+</head>
+<body>
+    <h1>Air Quality</h1>
+    <p>Select a gas to get its information:</p>
+    <select id="gasSelect">
+        <option value="NH3">NH3 - Ammonia</option>
+        <option value="NO2">NO2 - Nitrogen Dioxide</option>
+        <option value="C10H8">C10H8 - Naphthalene</option>
+		<option value="C6H6">C6H6 - Benzene</option>
+		<option value="C7H8">C7H8 - Toluene</option>
+		<option value="C8H10">C8H10 - Xylene</option>
+		<option value="CO">CO - Carbon monoxide</option>
+		<option value="H2S">H2S - Hydrogen Sulfide</option>
+		<option value="SO2">SO2 - Sulphur dioxide</option>
+		<option value="PS">PS - Ultra fine particles</option>
+		<option value="NO">NO - Nitrogen monoxide</option>
+		<option value=""></option>
+        <!-- Add other gases as needed -->
+    </select>
+    <button onclick="fetchGasInfo()">Fetch Information</button>
+
+    <h2>Information:</h2>
+    <div id="result"></div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
